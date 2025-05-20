@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+:root{
+  
+   background-color:#e8cad9;
+   color: black;
+}
+
+#agregarN{
+   box-shadow: rgba(107, 6, 6, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#titulo{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-weight: bold; 
+   animation: bounce 1s ease-in-out infinite;
+}
+#saludo{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
