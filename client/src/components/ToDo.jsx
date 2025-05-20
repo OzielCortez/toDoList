@@ -6,18 +6,21 @@ function ToDo() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:3001/api")  
+            .get("https://todolist-backend-0gkw.onrender.com/api")  
             .then((res) => setToDo(res.data.data))
             .catch((err) => console.error("Error fetching data:", err)); 
     }, []);
 
 
     const handleToggleDone = async (id, newDoneValue) => {
-        try {
+        /*try {
             await axios.patch(`http://localhost:3001/api/${id}`, {
                 done: newDoneValue,
+            });*/
+        try {
+            await axios.patch(`https://todolist-backend-0gkw.onrender.com/api${id}`, {
+                done: newDoneValue,
             });
-
             // Actualiza el estado local
             setToDo((prevTodos) =>
                 prevTodos.map((todo) =>

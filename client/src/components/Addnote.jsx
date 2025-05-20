@@ -19,7 +19,8 @@ function Addnote() {
     }
 
     try {
-      const response = await fetch('http://localhost:3001/api/todos', { 
+        /*const response = await fetch('http://localhost:3001/api/todos', { */
+        const response = await fetch('https://todolist-backend-0gkw.onrender.com/api/todos', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
