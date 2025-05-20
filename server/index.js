@@ -8,8 +8,8 @@ const todosRouter = require('./routes/todos.js');
 app.use(cors());
 app.use(express.json());
 
-app.get('/api', (req, res) => {
-    res.json({ message: "Hola desde el backend" });
+app.get("/", (req, res) => {
+    res.send("Backend funcionando correctamente");
 });
 
 app.use("/api/todos", todosRouter);
