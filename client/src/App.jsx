@@ -1,5 +1,5 @@
 import Addnote from "./components/Addnote";
-import Inicio from "./components/inicio";
+import Inicio from "./components/Inicio";
 import ToDo from "./components/ToDo";
 import {Routes, Route} from 'react-router-dom'
 
